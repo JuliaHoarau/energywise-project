@@ -1,0 +1,44 @@
+Date : 2024-08-22 14:56:14
+Directory : c:\Projects\energywise-project\src
+Total : 10 files,  207 codes, 12 comments, 65 blanks, all 284 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |          8 |        192 |         12 |         61 |        265 |
+| HTML       |          2 |         15 |          0 |          4 |         19 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                  | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                     |         10 |        207 |         12 |         65 |        284 |
+| . (Files)                                                             |          1 |         14 |          3 |          9 |         26 |
+| controllers                                                           |          1 |         21 |          0 |          7 |         28 |
+| models                                                                |          4 |        150 |          9 |         41 |        200 |
+| public                                                                |          1 |          0 |          0 |          1 |          1 |
+| public\scripts                                                        |          1 |          0 |          0 |          1 |          1 |
+| routes                                                                |          1 |          7 |          0 |          3 |         10 |
+| views                                                                 |          2 |         15 |          0 |          4 |         19 |
+| views (Files)                                                         |          1 |          0 |          0 |          1 |          1 |
+| views\partials                                                        |          1 |         15 |          0 |          3 |         18 |
++-----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                              | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\Projects\energywise-project\src\controllers\LocationController.mjs | JavaScript |         21 |          0 |          7 |         28 |
+| c:\Projects\energywise-project\src\models\ApplianceModel.mjs          | JavaScript |         31 |          1 |          8 |         40 |
+| c:\Projects\energywise-project\src\models\DataModel.mjs               | JavaScript |         53 |          0 |         15 |         68 |
+| c:\Projects\energywise-project\src\models\LocationApplianceModel.mjs  | JavaScript |         13 |          2 |          3 |         18 |
+| c:\Projects\energywise-project\src\models\LocationModel.mjs           | JavaScript |         53 |          6 |         15 |         74 |
+| c:\Projects\energywise-project\src\public\scripts\locations.mjs       | JavaScript |          0 |          0 |          1 |          1 |
+| c:\Projects\energywise-project\src\routes\locations.mjs               | JavaScript |          7 |          0 |          3 |         10 |
+| c:\Projects\energywise-project\src\server.mjs                         | JavaScript |         14 |          3 |          9 |         26 |
+| c:\Projects\energywise-project\src\views\locations.ejs                | HTML       |          0 |          0 |          1 |          1 |
+| c:\Projects\energywise-project\src\views\partials\locationDetails.ejs | HTML       |         15 |          0 |          3 |         18 |
+| Total                                                                 |            |        207 |         12 |         65 |        284 |
++-----------------------------------------------------------------------+------------+------------+------------+------------+------------+

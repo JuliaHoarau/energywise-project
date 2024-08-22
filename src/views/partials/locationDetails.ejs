@@ -1,0 +1,17 @@
+<span class="icon"><%= location.icon %></span>
+<h2><%= location.name %></h2>
+<span><%= location.state %></span>
+
+<h3>Appliances:</h3>
+<ul>
+    <% location.appliances.forEach(appliance => { %>
+        <li>
+            <strong>Name:</strong> <%= appliance.appliance.name %><br>
+            <strong>Count:</strong> <%= appliance.count %><br>
+            <strong>Total Energy Consumption:</strong> <%= appliance.getDailyEnergyConsumption() %> watt-hours
+        </li>
+    <% }); %>
+</ul>
+
+<h3>Total Energy Consumption:</h3>
+<span><%= location.totalEnergyConsumption %> watt-hours</span>
