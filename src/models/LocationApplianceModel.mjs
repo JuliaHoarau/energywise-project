@@ -10,7 +10,7 @@ export class LocationAppliance {
     // Calculate the daily energy consumption for this appliance at this location
     getDailyEnergyConsumption() {
         return this.appliance.watts * this.count * this.runningHours;
-    }
+    } 
 
     clone() {
         return new LocationAppliance(this.appliance.clone(), this.count, this.runningHours);
