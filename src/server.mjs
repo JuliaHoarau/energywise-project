@@ -1,26 +1,32 @@
-import express from "express"
-import path from "path"
-import locationRoutes from "./routes/locations.mjs"
+import express from "express";
+import path from "path";
+import { fileURLToPath } from "url"; // Import this to get the filename
 
-const app = express()
+import locationRoutes from "./routes/locations.mjs";
+
+// Create __dirname equivalent
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
+
+// Set up view engine
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "/views"));
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static(path.join(__dirname, '../public')));
 
 
-app.use(express.urlencoded({ extended: true }))
-app.use(express.json())
 
-// TODO: Enable sessions (not needed for assignment project)
+// Serve static files
+app.use(express.static("src/public"));
 
-app.set("view engine", "ejs")
-// app.set("views", "src/views")
-app.set("views", path.join(import.meta.dirname, "/views"))
+// Use routes
+app.use("/locations", locationRoutes);
 
-app.use(express.static("src/public"))
-
-
-// TODO: app.use routes
-app.use("/locations", locationRoutes)
-
-const port = 8080
+const port = 8080;
 app.listen(port, function() {
-    console.log("Express started on http://localhost:"+port)
-})
+    console.log("Express started on http://localhost:" + port);
+});
